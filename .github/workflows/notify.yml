@@ -1,6 +1,9 @@
 name: arXiv Notify
 
 on:
+# 手動実行を可能にする
+  workflow_dispatch:
+  
   schedule:
     - cron: '0 0 * * *'  # 毎日午前0時 (UTC)
 
